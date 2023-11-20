@@ -1,0 +1,8 @@
+---
+source: src/monkey/interpreter/mod.rs
+expression: result
+---
+Ok(Int(14))
+Ok(Error("len(): Invalid argument: Int(12345)"))
+Ok(Error("len(): Invalid number of argument - expected 1 got 2"))
+

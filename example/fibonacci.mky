@@ -1,0 +1,10 @@
+let fibonacci = fn(num) {
+  if (num < 2) {
+    return num;
+  }
+
+  return fibonacci(num - 1) + fibonacci(num - 2);
+}
+
+let result = fibonacci(10);
+result;

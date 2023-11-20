@@ -1,0 +1,16 @@
+---
+source: src/monkey/parser/mod.rs
+expression: output
+---
+Expression { expression: Infix { operator: Add, left: Int(5), right: Int(5) } }
+Expression { expression: Infix { operator: Sub, left: Int(5), right: Int(5) } }
+Expression { expression: Infix { operator: Mul, left: Int(5), right: Int(5) } }
+Expression { expression: Infix { operator: Div, left: Int(5), right: Int(5) } }
+Expression { expression: Infix { operator: Greater, left: Int(5), right: Int(5) } }
+Expression { expression: Infix { operator: Less, left: Int(5), right: Int(5) } }
+Expression { expression: Infix { operator: Equal, left: Int(5), right: Int(5) } }
+Expression { expression: Infix { operator: NotEqual, left: Int(5), right: Int(5) } }
+Expression { expression: Infix { operator: Equal, left: Bool(true), right: Bool(true) } }
+Expression { expression: Infix { operator: NotEqual, left: Bool(true), right: Bool(false) } }
+Expression { expression: Infix { operator: Equal, left: Bool(false), right: Bool(false) } }
+

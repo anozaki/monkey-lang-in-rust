@@ -1,0 +1,8 @@
+---
+source: src/monkey/parser/mod.rs
+expression: output
+---
+Let(Identifier("x"), Int(5))
+Let(Identifier("y"), Int(10))
+Let(Identifier("foobar"), Int(838383))
+

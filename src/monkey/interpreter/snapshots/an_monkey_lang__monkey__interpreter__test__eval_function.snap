@@ -1,0 +1,13 @@
+---
+source: src/monkey/interpreter/mod.rs
+expression: result
+---
+Ok(Function { ident: [], program: Program { statements: [Let(Identifier("x"), Int(5))] } })
+Ok(Function { ident: [Identifier("a"), Identifier("b"), Identifier("c")], program: Program { statements: [Let(Identifier("x"), Int(5))] } })
+Ok(Function { ident: [], program: Program { statements: [Expression { expression: Identifier(Identifier("a")) }] } })
+Ok(Function { ident: [Identifier("a")], program: Program { statements: [Expression { expression: Function { params: [], body: Program { statements: [] } } }] } })
+Ok(Int(5))
+Ok(Int(15))
+Ok(Int(12))
+Ok(Int(5))
+

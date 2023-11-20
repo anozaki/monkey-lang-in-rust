@@ -1,0 +1,7 @@
+---
+source: src/monkey/parser/mod.rs
+expression: output
+---
+Expression { expression: HashLiteral { params: [(String("test"), Int(1)), (String("asfd"), Int(2))] } }
+Expression { expression: HashLiteral { params: [(Infix { operator: Add, left: String("a"), right: String("b") }, Infix { operator: Add, left: Int(1), right: Int(3) }), (String("b"), String("a"))] } }
+

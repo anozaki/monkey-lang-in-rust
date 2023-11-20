@@ -1,0 +1,10 @@
+---
+source: src/monkey/parser/mod.rs
+expression: output
+---
+Expression { expression: Index { left: Identifier(Identifier("a")), index: Identifier(Identifier("b")) } }
+Expression { expression: Index { left: Identifier(Identifier("a")), index: Infix { operator: Add, left: Identifier(Identifier("b")), right: Int(1) } } }
+Expression { expression: Index { left: ArrayLiteral { params: [Int(0), Int(1), Int(2), Int(3)] }, index: Int(0) } }
+Expression { expression: Infix { operator: Add, left: Infix { operator: Add, left: Identifier(Identifier("a")), right: Index { left: Identifier(Identifier("b")), index: Int(0) } }, right: Index { left: Identifier(Identifier("c")), index: Identifier(Identifier("a")) } } }
+Expression { expression: Infix { operator: Mul, left: Identifier(Identifier("a")), right: Infix { operator: Add, left: Index { left: Identifier(Identifier("b")), index: Int(0) }, right: Index { left: Identifier(Identifier("c")), index: Identifier(Identifier("a")) } } } }
+

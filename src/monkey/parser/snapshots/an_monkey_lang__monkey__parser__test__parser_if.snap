@@ -1,0 +1,6 @@
+---
+source: src/monkey/parser/mod.rs
+expression: output
+---
+If { condition: Infix { operator: Equal, left: Identifier(Identifier("a")), right: Bool(true) }, consequence: Program { statements: [Let(Identifier("a"), Identifier(Identifier("b"))), If { condition: Infix { operator: Equal, left: Identifier(Identifier("b")), right: Identifier(Identifier("book")) }, consequence: Program { statements: [Let(Identifier("d"), Identifier(Identifier("e"))), Let(Identifier("d"), Infix { operator: Add, left: Infix { operator: Add, left: Infix { operator: Add, left: Identifier(Identifier("a")), right: Identifier(Identifier("b")) }, right: Identifier(Identifier("c")) }, right: Infix { operator: Add, left: Int(10), right: Int(20) } })] }, alternative: None }] }, alternative: Some(Program { statements: [Let(Identifier("a"), Infix { operator: Add, left: Identifier(Identifier("c")), right: Int(5) })] }) }
+

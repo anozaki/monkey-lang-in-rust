@@ -1,0 +1,23 @@
+---
+source: src/monkey/parser/mod.rs
+expression: output
+---
+Expression { expression: Infix { operator: Mul, left: Prefix { operator: Neg, expression: Identifier(Identifier("a")) }, right: Identifier(Identifier("b")) } }
+Expression { expression: Prefix { operator: Not, expression: Prefix { operator: Neg, expression: Identifier(Identifier("a")) } } }
+Expression { expression: Infix { operator: Add, left: Infix { operator: Add, left: Identifier(Identifier("a")), right: Identifier(Identifier("b")) }, right: Identifier(Identifier("c")) } }
+Expression { expression: Infix { operator: Sub, left: Infix { operator: Add, left: Identifier(Identifier("a")), right: Identifier(Identifier("b")) }, right: Identifier(Identifier("c")) } }
+Expression { expression: Infix { operator: Mul, left: Infix { operator: Mul, left: Identifier(Identifier("a")), right: Identifier(Identifier("b")) }, right: Identifier(Identifier("c")) } }
+Expression { expression: Infix { operator: Div, left: Infix { operator: Mul, left: Identifier(Identifier("a")), right: Identifier(Identifier("b")) }, right: Identifier(Identifier("c")) } }
+Expression { expression: Infix { operator: Add, left: Identifier(Identifier("a")), right: Infix { operator: Div, left: Identifier(Identifier("b")), right: Identifier(Identifier("c")) } } }
+Expression { expression: Infix { operator: Sub, left: Infix { operator: Add, left: Infix { operator: Add, left: Identifier(Identifier("a")), right: Infix { operator: Mul, left: Identifier(Identifier("b")), right: Identifier(Identifier("c")) } }, right: Infix { operator: Div, left: Identifier(Identifier("d")), right: Identifier(Identifier("e")) } }, right: Identifier(Identifier("f")) } }
+Expression { expression: Infix { operator: Add, left: Int(3), right: Int(4) } }
+Expression { expression: Infix { operator: Mul, left: Prefix { operator: Neg, expression: Int(5) }, right: Int(5) } }
+Expression { expression: Infix { operator: Equal, left: Infix { operator: Greater, left: Int(5), right: Int(4) }, right: Infix { operator: Less, left: Int(3), right: Int(4) } } }
+Expression { expression: Infix { operator: NotEqual, left: Infix { operator: Less, left: Int(5), right: Int(4) }, right: Infix { operator: Greater, left: Int(3), right: Int(4) } } }
+Expression { expression: Infix { operator: Equal, left: Infix { operator: Add, left: Int(3), right: Infix { operator: Mul, left: Int(4), right: Int(5) } }, right: Infix { operator: Add, left: Infix { operator: Mul, left: Int(3), right: Int(1) }, right: Infix { operator: Mul, left: Int(4), right: Int(5) } } } }
+Expression { expression: Infix { operator: Add, left: Infix { operator: Add, left: Int(1), right: Infix { operator: Add, left: Int(2), right: Int(3) } }, right: Int(4) } }
+Expression { expression: Infix { operator: Mul, left: Infix { operator: Add, left: Int(5), right: Int(5) }, right: Int(2) } }
+Expression { expression: Infix { operator: Div, left: Int(2), right: Infix { operator: Add, left: Int(5), right: Int(5) } } }
+Expression { expression: Prefix { operator: Neg, expression: Infix { operator: Add, left: Int(5), right: Int(5) } } }
+Expression { expression: Prefix { operator: Not, expression: Infix { operator: Equal, left: Bool(true), right: Bool(true) } } }
+

@@ -1,0 +1,8 @@
+---
+source: src/monkey/interpreter/mod.rs
+expression: result
+---
+Ok(String("This is a test"))
+Ok(String("This is\n"))
+Ok(String("This 5"))
+

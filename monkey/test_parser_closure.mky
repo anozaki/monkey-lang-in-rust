@@ -1,0 +1,7 @@
+let o = 5;
+let a = fn() { o }
+a();
+
+let b = fn(m) { m() }
+let c = 10;
+b(a);

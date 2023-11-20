@@ -1,0 +1,8 @@
+---
+source: src/monkey/parser/mod.rs
+expression: output
+---
+Let(Identifier("a"), Function { params: [Identifier("x"), Identifier("y")], body: Program { statements: [Expression { expression: Infix { operator: Add, left: Identifier(Identifier("x")), right: Identifier(Identifier("y")) } }] } })
+Expression { expression: Function { params: [], body: Program { statements: [Expression { expression: Identifier(Identifier("a")) }] } } }
+Expression { expression: Call { function: Identifier(Identifier("function_name")), params: [Infix { operator: Add, left: Identifier(Identifier("a")), right: Identifier(Identifier("b")) }, Infix { operator: Add, left: Identifier(Identifier("b")), right: Infix { operator: Mul, left: Int(1), right: Int(5) } }] } }
+

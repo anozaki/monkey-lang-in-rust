@@ -1,0 +1,9 @@
+if (a == true) {
+    let a = b;
+    if (b == book) {
+        let d = e;
+        let d = a + b + c + (10 + 20);
+    }
+} else {
+    let a = c + 5;
+}

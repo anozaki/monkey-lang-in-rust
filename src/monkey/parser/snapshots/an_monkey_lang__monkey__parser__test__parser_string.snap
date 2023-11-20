@@ -1,0 +1,9 @@
+---
+source: src/monkey/parser/mod.rs
+expression: output
+---
+Expression { expression: String("") }
+Expression { expression: String("this is a test") }
+Let(Identifier("a"), String("another string"))
+Expression { expression: String("test\tanother\nagain\"") }
+

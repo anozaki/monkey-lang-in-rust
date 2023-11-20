@@ -1,0 +1,8 @@
+---
+source: src/monkey/parser/mod.rs
+expression: output
+---
+Return(Int(5))
+Return(Int(10))
+Return(Int(993322))
+

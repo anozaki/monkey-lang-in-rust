@@ -1,0 +1,11 @@
+---
+source: src/monkey/parser/mod.rs
+expression: output
+---
+Let(Identifier("o"), Int(5))
+Let(Identifier("a"), Function { params: [], body: Program { statements: [Expression { expression: Identifier(Identifier("o")) }] } })
+Expression { expression: Call { function: Identifier(Identifier("a")), params: [] } }
+Let(Identifier("b"), Function { params: [Identifier("m")], body: Program { statements: [Expression { expression: Call { function: Identifier(Identifier("m")), params: [] } }] } })
+Let(Identifier("c"), Int(10))
+Expression { expression: Call { function: Identifier(Identifier("b")), params: [Identifier(Identifier("a"))] } }
+

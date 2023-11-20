@@ -1,0 +1,18 @@
+---
+source: src/monkey/interpreter/mod.rs
+expression: result
+---
+Ok(Array([Int(0), Int(1), Int(3)]))
+Ok(Int(1))
+Ok(Null)
+Ok(Null)
+Ok(Int(3))
+Ok(Int(6))
+Ok(Int(6))
+Ok(Int(4))
+Ok(Int(3))
+Ok(Int(1))
+Ok(Int(4))
+Ok(Array([Int(1), Int(2), Int(5)]))
+Ok(Array([Int(1), Int(2)]))
+

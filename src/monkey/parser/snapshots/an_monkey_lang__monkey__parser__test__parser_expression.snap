@@ -1,0 +1,14 @@
+---
+source: src/monkey/parser/mod.rs
+expression: output
+---
+Expression { expression: Int(1) }
+Expression { expression: Int(2) }
+Expression { expression: Int(12345) }
+Expression { expression: Prefix { operator: Not, expression: Int(2345) } }
+Expression { expression: Prefix { operator: Neg, expression: Int(154243) } }
+Expression { expression: Bool(true) }
+Expression { expression: Bool(false) }
+Expression { expression: Prefix { operator: Not, expression: Bool(true) } }
+Expression { expression: Prefix { operator: Not, expression: Bool(false) } }
+

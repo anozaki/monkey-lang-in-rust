@@ -1,0 +1,9 @@
+---
+source: src/monkey/interpreter/mod.rs
+expression: result
+---
+Ok(String("a"))
+Ok(Int(5))
+Ok(Int(65))
+Ok(Int(16))
+

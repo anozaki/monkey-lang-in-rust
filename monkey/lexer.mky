@@ -1,0 +1,32 @@
+let five = 5;
+let ten = 10;
+
+let add = fn(x, y) {
+  x + y;
+};
+
+let result = add(five, ten);
+!-/*5;
+5 < 10 > 5;
+
+if (5 < 10) {
+    return true;
+} else {
+    return false;
+}
+
+5 == 4;
+5 != 4;
+5 <= 6;
+5 >= 7;
+
+fn() {
+
+}
+
+"this is a test";
+let a = "this is another\n\"test\"";
+[1, 2, 3];
+[1, 2 * 3, 5];
+
+{foo: 5, a: "test"}
